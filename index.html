@@ -17,35 +17,31 @@
       padding: 0;
     }
     .hero-text {
-  color: #ffffff; /* Default color, overridden by gradient */
-  font-weight: 800;
-  font-size: 3rem;
-  /* Removed text-shadow to eliminate white shadow */
-  text-transform: none; /* Ensure text-transform doesn't interfere */
-}
-
-.hero-text.text-transparent {
-  /* Removed text-shadow here as well */
-}
-
-button.bg-gradient-to-r {
-  background: linear-gradient(to right, #ecc94b, #f6e05e, #f59e0b); /* Fallback with stronger yellow tones */
-}
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 3rem;
+      text-transform: none;
+    }
+    .hero-text.text-transparent {
+    }
+    button.bg-gradient-to-r {
+      background: linear-gradient(to right, #ecc94b, #f6e05e, #f59e0b);
+    }
     .hero-section {
       background-image: url('airplane-5645875.jpg');
       background-size: cover;
       background-position: center;
       height: 100vh;
-      position: relative; /* Added for absolute positioning of content */
+      position: relative;
       @media (max-width: 768px) {
         height: 50vh;
       }
     }
     .hero-content {
-      position: absolute; /* Position content at the top */
-      top: 20px; /* Adjust this value to set the distance from the top */
+      position: absolute;
+      top: 20px;
       left: 50%;
-      transform: translateX(-50%); /* Center horizontally */
+      transform: translateX(-50%);
       text-align: center;
       padding: 0 1rem;
     }
@@ -63,7 +59,7 @@ button.bg-gradient-to-r {
       position: relative;
       overflow: hidden;
       padding: 2rem 0;
-      background-color: black; /* Changed to solid black */
+      background-color: black;
       @media (min-width: 768px) {
         padding: 4rem 0;
       }
@@ -234,13 +230,11 @@ button.bg-gradient-to-r {
         font-size: 2rem;
       }
     }
-    /* Hero text responsiveness */
     @media (max-width: 768px) {
       .hero-text {
         font-size: 1.5rem;
       }
     }
-    /* General button responsiveness */
     button {
       padding: 0.75rem;
       font-size: 1rem;
@@ -274,17 +268,15 @@ button.bg-gradient-to-r {
     </div>
   </nav>
 
-  <!-- Hero Section (Text and Button Moved to Top) -->
-<section class="hero-section">
-  <div class="hero-content">
-    <h1 class="hero-text text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-yellow-400 to-amber-300 animate-pulse-slow">Ready to Elevate Your Travel Experience?</h1>
-    <div class="mt-4 space-x-2">
-      <button onclick="scrollToJourney()" class="bg-gradient-to-r from-yellow-500 via-yellow-400 to-amber-300 text-black px-4 py-2 md:px-6 md:py-3 rounded-full hover:opacity-90 transition duration-300">Plan a Flight</button>
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-text text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-yellow-400 to-amber-300 animate-pulse-slow">Ready to Elevate Your Travel Experience?</h1>
+      <div class="mt-4 space-x-2">
+        <button onclick="scrollToJourney()" class="bg-gradient-to-r from-yellow-500 via-yellow-400 to-amber-300 text-black px-4 py-2 md:px-6 md:py-3 rounded-full hover:opacity-90 transition duration-300">Plan a Flight</button>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Booking Form Section -->
   <section class="py-8 md:py-16 bg-gray-900">
     <div class="max-w-5xl mx-auto px-4 text-center">
       <h2 class="text-2xl md:text-3xl font-bold mb-2">Plan Your Journey</h2>
@@ -409,7 +401,6 @@ button.bg-gradient-to-r {
     }
   </script>
 
-  <!-- Services -->
   <section id="services" class="py-10 md:py-20 bg-gradient-to-b from-gray-900 to-gray-800 text-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 text-center">
       <h2 class="text-3xl md:text-5xl font-extrabold mb-6 md:mb-12 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-gold-300 animate-pulse">Our Premium Services</h2>
@@ -447,13 +438,11 @@ button.bg-gradient-to-r {
     <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80')] bg-fixed bg-cover bg-center opacity-10"></div>
   </section>
 
-  <!-- Fleet Showcase -->
   <section id="fleet" class="fleet-section">
     <div class="max-w-7xl mx-auto px-4 text-center">
       <h2 class="text-3xl md:text-5xl font-extrabold mb-8 md:mb-16 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-gold-300 to-white animate-pulse-slow">Discover Our Elite Fleet</h2>
       <div class="relative">
         <div class="fleet-slider" id="fleetSlider">
-          <!-- Helicopter -->
           <div class="fleet-slide">
             <img src="helicopter-7473101.jpg" alt="Helicopter">
             <div class="slide-overlay">
@@ -462,12 +451,9 @@ button.bg-gradient-to-r {
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Engine:</strong> Single Engine</li>
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Seats:</strong> 3</li>
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Range:</strong> 258 km</li>
-                <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Cost:</strong> ₹1350/min</li>
               </ul>
             </div>
           </div>
-
-          <!-- Falcon B Jet -->
           <div class="fleet-slide">
             <img src="pexels-saturnus99-17802166.jpg" alt="Falcon B Jet">
             <div class="slide-overlay">
@@ -475,12 +461,9 @@ button.bg-gradient-to-r {
               <ul>
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Seats:</strong> 9</li>
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Range:</strong> 11019 km</li>
-                <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Cost:</strong> $72/min</li>
               </ul>
             </div>
           </div>
-
-          <!-- Pilatus PC -->
           <div class="fleet-slide">
             <img src="Pilatus PC.jpg" alt="Pilatus PC">
             <div class="slide-overlay">
@@ -488,12 +471,9 @@ button.bg-gradient-to-r {
               <ul>
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Seats:</strong> 6</li>
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Range:</strong> 2804 km</li>
-                <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Cost:</strong> ₹1333/min</li>
               </ul>
             </div>
           </div>
-
-          <!-- Lear Jet -->
           <div class="fleet-slide">
             <img src="Lear Jet.jpg" alt="Lear Jet">
             <div class="slide-overlay">
@@ -501,12 +481,9 @@ button.bg-gradient-to-r {
               <ul>
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Seats:</strong> 7</li>
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Range:</strong> 4478 km</li>
-                <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Cost:</strong> $45/min</li>
               </ul>
             </div>
           </div>
-
-          <!-- Citation Jet -->
           <div class="fleet-slide">
             <img src="Citation Jet.jpg" alt="Citation Jet">
             <div class="slide-overlay">
@@ -514,12 +491,9 @@ button.bg-gradient-to-r {
               <ul>
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Seats:</strong> 8</li>
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Range:</strong> 5956 km</li>
-                <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Cost:</strong> $5846/min</li>
               </ul>
             </div>
           </div>
-
-          <!-- Helicopters (Twin Engine) -->
           <div class="fleet-slide">
             <img src="Helicopters (Twin Engine).jpg" alt="Helicopters (Twin Engine)">
             <div class="slide-overlay">
@@ -528,12 +502,9 @@ button.bg-gradient-to-r {
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Engine:</strong> Twin Engine</li>
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Seats:</strong> 5</li>
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Range:</strong> 745 km</li>
-                <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Cost:</strong> $35/min</li>
               </ul>
             </div>
           </div>
-
-          <!-- Gulfstream -->
           <div class="fleet-slide">
             <img src="Gulfstream.jpg" alt="Gulfstream">
             <div class="slide-overlay">
@@ -541,12 +512,9 @@ button.bg-gradient-to-r {
               <ul>
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Seats:</strong> 14</li>
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Range:</strong> 12960 km</li>
-                <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Cost:</strong> $99/min</li>
               </ul>
             </div>
           </div>
-
-          <!-- King Air -->
           <div class="fleet-slide">
             <img src="King Air.jpg" alt="King Air">
             <div class="slide-overlay">
@@ -554,7 +522,6 @@ button.bg-gradient-to-r {
               <ul>
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Seats:</strong> 6</li>
                 <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Range:</strong> 3338 km</li>
-                <li><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 10H9v-2h2v2zm0-4H9V6h2v2z"/></svg><strong>Cost:</strong> $14/min</li>
               </ul>
             </div>
           </div>
@@ -580,7 +547,6 @@ button.bg-gradient-to-r {
     setInterval(() => moveSlide(1), 5000);
   </script>
 
-  <!-- Features -->
   <section class="py-10 md:py-20 bg-gradient-to-b from-gray-900 to-gray-700 text-white relative">
     <div class="max-w-7xl mx-auto px-4 text-center">
       <h2 class="text-3xl md:text-5xl font-extrabold mb-6 md:mb-12 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-gold-300 animate-pulse">Beyond Expectations</h2>
@@ -617,7 +583,6 @@ button.bg-gradient-to-r {
     <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80')] bg-fixed bg-cover bg-center opacity-10"></div>
   </section>
 
-  <!-- Contact Form Section -->
   <section class="py-8 md:py-16 bg-black">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
       <div>
@@ -680,7 +645,6 @@ button.bg-gradient-to-r {
     });
   </script>
 
-  <!-- Contact Form Section -->
   <section class="py-8 md:py-16 bg-gray-900">
     <div class="max-w-6xl mx-auto px-4 text-center">
       <h2 class="text-2xl md:text-3xl font-bold mb-2">Plan Your Journey</h2>
@@ -689,12 +653,10 @@ button.bg-gradient-to-r {
     </div>
   </section>
 
-  <!-- WhatsApp Floating Icon -->
   <div class="whatsapp-float">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" onclick="openWhatsAppModal()">
   </div>
 
-  <!-- WhatsApp Modal -->
   <div id="whatsapp-modal" class="modal">
     <div class="modal-content">
       <span class="close-modal" onclick="closeWhatsAppModal()">×</span>
@@ -726,10 +688,10 @@ button.bg-gradient-to-r {
       const formData = new FormData(e.target);
       const name = formData.get('name');
       const phone = formData.get('phone');
-      const email = formData.get('email') || 'Not provided'; // Optional email
+      const email = formData.get('email') || 'Not provided';
 
       const data = {
-        toPhone: phone.startsWith('+') ? phone : '+91' + phone, // Ensure proper format
+        toPhone: phone.startsWith('+') ? phone : '+91' + phone,
         name: name,
         email: email,
       };
